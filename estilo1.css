@@ -1,0 +1,153 @@
+*{ margin: 0;
+   padding: 0; 
+   font-family: myFirstFont;
+   font-size: medium}
+
+@font-face {font-family: myFirstFont;
+			src: url(Norse.otf);}
+
+body { min-height: 100%;
+       background-image: url("imagenes/fondotest3.jpg");
+       background-repeat: no-repeat;
+       background-position: top center;
+       background-color: black; }
+  
+.general { margin: auto; 
+	       margin-top: 0px;
+           width: 950;
+           height: 900;}
+
+		   /* cabecera */
+.header { position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+    	text-align: center;
+		z-index: 88;}
+
+		/* info de la derecha */
+.info{ position: absolute;
+		margin-left: 850px;
+		margin-right: auto;
+		text-align: center;
+		width: 190px;   /* ancho de los menus */
+		height: 450px;
+		top: 80px;
+		border: 5px solid rgb(255, 208, 90);/* ...........test.................. */
+		border-radius: 20px;
+		-webkit-box-shadow: 16px 16px 16px 4px #000000; 
+		 box-shadow: 16px 16px 16px 4px #000000;
+		z-index: -22;}
+
+div.info table {margin: 10px auto;
+				text-align: left;}
+
+           /* estilo2.css .container tiene que tener misma width y height */
+iframe { position: absolute;
+         margin-left: 125px;
+         margin-right: auto;
+         width: 700px; 
+         height: 562px; 
+		 /* borde redondo con gradiente ventana ppal*/
+		 border: double 8px transparent;
+		 border-radius: 80px;
+		 background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 208, 90),#000000);
+		 background-origin: border-box;
+		 background-clip: content-box, border-box;
+		 /* sombra */
+		 -webkit-box-shadow: 16px 16px 16px 4px #000000; 
+		 box-shadow: 16px 16px 16px 4px #000000;}
+
+           /* estilo del menu izquierdo */
+nav { position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2;
+	display: flex;
+	align-items: flex-start;
+	width: 120px;   /* ancho de los menus */
+	height: 500px;
+	top: 80px;
+	border: 5px solid rgb(255, 208, 90);/* ...........test.................. */
+    border-radius: 20px;
+	  /*background-color: rgba(17, 17, 17, 0); */
+	background-image: url('imagenes/fondoguerrero.jpg');
+	background-repeat: no-repeat;
+	background-attachment: initial;
+	transition: all 0.6s;
+	  /* sombra */
+	-webkit-box-shadow: 16px 16px 16px 4px #000000; 
+	box-shadow: 16px 16px 16px 4px #000000;}
+
+li, ul label.title, ul, a {	width: 100%;
+							font-size: 16px;
+							color: rgb(255, 255, 255);
+							display: block;}
+							
+ul label { height: 21px;}
+
+ul li{ height: 35px;
+	    overflow: hidden;
+	    transition: all .3s; }
+
+li { display: block;
+ 	 background-color: transparent; }
+
+label.title { background: linear-gradient(rgb(255, 208, 90, 0.842), rgb(50, 50, 50, 0.842)); /* color gradiente titulos menu */
+			  padding: 9px 20px;
+		      cursor: pointer;
+   			  transition: all .5s; }
+
+/* se tuerce y estira el menu izquierdo cuando hover */
+nav:hover { transform: rotate(-2deg);-ms-transform: rotate(2deg); /* IE 9 */
+			margin-left: 0px; width: 300px; }
+
+a{	text-decoration: none;
+	color: rgb(255, 166, 32);
+	display: block;
+	padding: 10px 20px;
+	transition: all 0.25s; }
+
+a:hover { background-color: rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 50px 0px rgb(250, 208, 90); 
+		  letter-spacing: 3px;}
+
+input[type="radio"] { display: none;}
+
+/* altura de la lista desplegable */
+#edit:checked + li, #personaje:checked + li, #mapa:checked + li, #cuartel:checked + li { height: 195px; } 
+
+
+
+
+
+
+
+/* todo el rollo de la tabla de puntuaciones */
+table.latabla {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 0px solid #FFDA00;
+	width: 125px;
+  }
+  table.latabla td, table.latabla th {
+	border: 2px solid #AAAAAA;
+  }
+  table.latabla tbody td {
+	font-size: 10px;
+	color: #333333;
+  }
+  table.latabla thead {
+	background: #DDC507;
+  }
+  table.latabla thead th {
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+  }
+  table.latabla tfoot {
+	font-size: 10px;
+	font-weight: bold;
+	border-top: 0px solid #444444;
+  }
+  table.latabla tfoot td {
+	font-size: 10px;
+  }

@@ -1,0 +1,42 @@
+*{ margin: 0;
+  padding: 0; 
+  font-family: myFirstFont;
+  font-size: medium}
+
+@font-face {font-family: myFirstFont;
+     src: url(Norse.otf);}
+
+body { min-height: 100%;
+       background-color: black; 
+       overflow: hidden; /* Hide scrollbars */}
+
+.principal {position: absolute;
+  margin-left: auto;
+	margin-right: auto;
+    	text-align: center;
+    width: 700px; 
+    height: 562px;}  
+
+
+       /* contenedor del mapamundi y demás */
+.container{ width: 700px; 
+         height: 562px; 
+         overflow: scroll; 
+         margin: 0 auto;}
+
+.espaciocentral { width: 700px; 
+  height: 562px; 
+  overflow: scroll; 
+  margin: 0 auto;}
+
+        /* titulo superior del mapa y titulos */
+#titulo{  position: absolute;
+text-align: center;
+text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
+-webkit-box-shadow: 16px 16px 16px 4px #000000; 
+ box-shadow: 16px 16px 16px 4px #000000;
+border: 5px solid rgb(255, 208, 90);/* ...........test.................. */
+border-radius: 20px;
+margin-left: 500px;}
+
+
